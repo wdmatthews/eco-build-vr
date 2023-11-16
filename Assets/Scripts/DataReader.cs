@@ -5,11 +5,13 @@ public class DataReader : MonoBehaviour
 {
     private static readonly Dictionary<string, int> _hourlyStartByVariable = new()
     {
-        { "Air Relative Humidity (%)", 0 },
-        { "Cooling Energy (J)", 27 },
-        { "Heating Energy (J)", 54 },
-        { "Air Temperature (T)", 81 },
-        { "Electricity Energy (J)", 108 },
+        { "Air Relative Humidity (%)", 12 },
+        { "Air Temperature (C)", 85 },
+        { "Electricity Energy (J)", 158 },
+        { "Infiltration Total Heat Gain Energy (J)", 231 },
+        { "Infiltration Total Heat Loss Energy (J),", 304 },
+        { "Lights Electricity Energy (J)", 377 },
+        { "Windows Total Transmitted Solar Radiation Energy (J)", 511 },
     };
 
     [SerializeField] private Transform[] _graphLocations = null;

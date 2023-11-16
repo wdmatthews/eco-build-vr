@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &7766591299466372057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2299,13 +2299,17 @@ MonoBehaviour:
     m_Options:
     - m_Text: Air Relative Humidity (%)
       m_Image: {fileID: 0}
-    - m_Text: Cooling Energy (J)
-      m_Image: {fileID: 0}
-    - m_Text: Heating Energy (J)
-      m_Image: {fileID: 0}
-    - m_Text: Air Temperature (T)
+    - m_Text: Air Temperature (C)
       m_Image: {fileID: 0}
     - m_Text: Electricity Energy (J)
+      m_Image: {fileID: 0}
+    - m_Text: Infiltration Total Heat Gain Energy (J)
+      m_Image: {fileID: 0}
+    - m_Text: Infiltration Total Heat Loss Energy (J)
+      m_Image: {fileID: 0}
+    - m_Text: Lights Electricity Energy (J)
+      m_Image: {fileID: 0}
+    - m_Text: Windows Total Transmitted Solar Radiation Energy (J)
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
