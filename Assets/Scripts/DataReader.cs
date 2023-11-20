@@ -14,7 +14,8 @@ public class DataReader : MonoBehaviour
         { "Windows Total Transmitted Solar Radiation Energy (J)", 511 },
     };
 
-    [SerializeField] private Transform[] _graphLocations = null;
+    [SerializeField] private Transform[] _graphLocations = { };
+    [SerializeField] private Material[] _floorMaterials = { };
     [SerializeField] private Camera _uiCamera = null;
     [SerializeField] private DataGraph _graphPrefab = null;
     [SerializeField] private string[] _zones = { };
@@ -72,7 +73,7 @@ public class DataReader : MonoBehaviour
         {
             string zone = _zones[z];
             DataGraph graph = Instantiate(_graphPrefab, _graphLocations[z]);
-            graph.Initialize(zone);
+            graph.Initialize(zone, _floorMaterials[z]);
             graph.Camera = _uiCamera;
             graph.HourlyDataByVariable = _hourlyByRoomAndVariable[zone];
             _graphByRoom.Add(zone, graph);

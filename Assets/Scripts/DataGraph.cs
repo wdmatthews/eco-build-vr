@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class DataGraph : MonoBehaviour
@@ -43,7 +44,9 @@ public class DataGraph : MonoBehaviour
     [SerializeField] private TMP_Dropdown _variableField = null;
     [SerializeField] private TMP_Dropdown _monthField = null;
     [SerializeField] private TMP_Dropdown _dayField = null;
+    [SerializeField] private Slider _hourSlider = null;
     [SerializeField] private GraphBar _barPrefab = null;
+    [SerializeField] private Gradient _floorGradient = new Gradient();
 
     public Camera Camera { set => _canvas.worldCamera = value; }
     public Dictionary<string, float[]> HourlyDataByVariable { get; set; }
@@ -56,11 +59,14 @@ public class DataGraph : MonoBehaviour
     private string _variable = "Air Relative Humidity (%)";
     private string _month = "January";
     private int _day = 1;
+    private int _hour = 0;
+    private Material _floorMaterial = null;
 
-    public void Initialize(string roomName)
+    public void Initialize(string roomName, Material floorMaterial)
     {
         name = $"{roomName}_Graph";
         _roomLabel.text = roomName;
+        _floorMaterial = floorMaterial;
     }
 
     public void UpdateBars()
@@ -89,6 +95,7 @@ public class DataGraph : MonoBehaviour
         bool isAnnual = _period == "Annual";
         _monthField.gameObject.SetActive(isHourly);
         _dayField.gameObject.SetActive(isHourly);
+        _hourSlider.gameObject.SetActive(isHourly && _variable == "Air Temperature (C)");
 
         for (int i = 0; i < _bars.Length; i++)
         {
@@ -98,6 +105,22 @@ public class DataGraph : MonoBehaviour
         }
 
         if (isHourly) CreateBars(GetHourlyData(_month, _day, HourlyDataByVariable[_variable]));
+        // if (isMonthly)
+        // if (isAnnual)
+        
+        if (isHourly)
+        {
+            _hour = 0;
+            _hourSlider.value = 0;
+            UpdateFloor();
+        }
+    }
+
+    public void UpdateFloor()
+    {
+        _hour = (int)_hourSlider.value;
+        float percent = _data[Mathf.Min(_hour, _data.Length - 1)] / _maxValue;
+        _floorMaterial.color = _floorGradient.Evaluate(percent);
     }
 
     private void CreateBars(float[] data = null)
