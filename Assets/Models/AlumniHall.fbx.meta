@@ -7,388 +7,403 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: e24f94e25a17d45f1b2d8222cfcbe118, type: 2}
+      name: Auditorium
+    second: {fileID: 2100000, guid: 4eed2f80174ba4b45a5f42879a622c6f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: 35e1bf319c3cd48a8aa08516c2c1e5c2, type: 2}
+      name: Base
+    second: {fileID: 2100000, guid: 6e630dbe81948483680974d29c929d27, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: 27f7a2b1b0856496ebf16b2a7ec792e0, type: 2}
+      name: Basement01
+    second: {fileID: 2100000, guid: 0f63f628242e8427890a9cb94e18a808, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.004
-    second: {fileID: 2100000, guid: 4ed1f9aad667445cc8ed5142f54c5b7d, type: 2}
+      name: Basement02
+    second: {fileID: 2100000, guid: d62aa4296fba646b188e583310c2d634, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.005
-    second: {fileID: 2100000, guid: 6049370ed072841c98638a0a29244d5e, type: 2}
+      name: Basement03
+    second: {fileID: 2100000, guid: 85e8451362c53492fb89bb6ca0cc4176, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.006
-    second: {fileID: 2100000, guid: dc9a2404cc10246c887f6bdaf702bd3f, type: 2}
+      name: Basement04
+    second: {fileID: 2100000, guid: 9948203e85bba4af3a81be018c435800, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.007
-    second: {fileID: 2100000, guid: f77166d115af849e8989311fe261bb22, type: 2}
+      name: Basement05
+    second: {fileID: 2100000, guid: bedc0ebb0876a4525a78a446be0c1b37, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.008
-    second: {fileID: 2100000, guid: 058b434a351454c6e90bd9f587c5d498, type: 2}
+      name: Basement06
+    second: {fileID: 2100000, guid: 22a78fae2ee534816b329220210311d5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.009
-    second: {fileID: 2100000, guid: de54b7e69b19e43cb9075879a17d398b, type: 2}
+      name: Basement07
+    second: {fileID: 2100000, guid: be218a501f9b04d1c88bf8a5931da054, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.010
-    second: {fileID: 2100000, guid: dce831ed107894318b1c2429bb802ddb, type: 2}
+      name: Basement08
+    second: {fileID: 2100000, guid: 25ac49a584f90455aadda9a1061f77c2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.011
-    second: {fileID: 2100000, guid: 97ed8bbd0b7fc43e9990584d86091ce3, type: 2}
+      name: Bathroom01
+    second: {fileID: 2100000, guid: 7683c43cc233f47af89ae0f32b922edd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.012
-    second: {fileID: 2100000, guid: 1168ebd0487604613b43d8b8e3a10167, type: 2}
+      name: Bathroom02
+    second: {fileID: 2100000, guid: 2ed398f7465b04f37b4fbf31f2a9d44b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.013
-    second: {fileID: 2100000, guid: c51262484adc946f4a43a875ef3d360c, type: 2}
+      name: Bathroom03
+    second: {fileID: 2100000, guid: 8cdf6ab35df744e70abf87739a0bcfd0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.014
-    second: {fileID: 2100000, guid: d77366060b4cc4332b7e1748cfc581e0, type: 2}
+      name: Classroom01
+    second: {fileID: 2100000, guid: eef74022e465f4af89a8415174776d09, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.015
-    second: {fileID: 2100000, guid: 82a437e7cfa11410eaf27a86a5ddfcb8, type: 2}
+      name: Classroom02
+    second: {fileID: 2100000, guid: eb65d366b1e2547db8be1de0ba4b6bd0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.016
-    second: {fileID: 2100000, guid: 7cb47b230ef424aa0b78423699d76180, type: 2}
+      name: Classroom03
+    second: {fileID: 2100000, guid: 875822142129e4e04860debddd60afa9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.018
-    second: {fileID: 2100000, guid: 799603c3fa75b4c7bbc86581c11e6b90, type: 2}
+      name: Classroom04
+    second: {fileID: 2100000, guid: d56a2b4b99dbb48f998a87e35510a01a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.019
-    second: {fileID: 2100000, guid: e8c8f8bcf3af945f7843238d913bd46e, type: 2}
+      name: Classroom05
+    second: {fileID: 2100000, guid: 25034d43bcd55462aa4f992fb1d49448, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.020
-    second: {fileID: 2100000, guid: cbab09fe74c53432e9e9716521429888, type: 2}
+      name: Classroom06
+    second: {fileID: 2100000, guid: 7d241818bd1cb4b589b19fab4989a6b9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.021
-    second: {fileID: 2100000, guid: ef799c34a2a154f3e91ec2fead516268, type: 2}
+      name: Classroom07
+    second: {fileID: 2100000, guid: 3305ac3d62677446cb5f791f97392f8e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.022
-    second: {fileID: 2100000, guid: 55a2fbb6aba6347f798a25b3a974a614, type: 2}
+      name: Classroom08
+    second: {fileID: 2100000, guid: 9536502b778654bb8b77a3e7eeff5dbe, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.023
-    second: {fileID: 2100000, guid: d5385e46d11844f4a936695a0ebb8f16, type: 2}
+      name: Classroom09
+    second: {fileID: 2100000, guid: 54be176699084424aa5008f839f9c7d3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.024
-    second: {fileID: 2100000, guid: 5290150159b934249bb5360d181872a4, type: 2}
+      name: Classroom10
+    second: {fileID: 2100000, guid: acae89cee2efc423f97913dd627c7369, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.025
-    second: {fileID: 2100000, guid: db84bda830e6c44969588d12455da359, type: 2}
+      name: Classroom11
+    second: {fileID: 2100000, guid: 807f99bf9e3f14b27a301b1039984b2c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.026
-    second: {fileID: 2100000, guid: c9b8916383aec41149da56a7180bf6c4, type: 2}
+      name: Lobby01
+    second: {fileID: 2100000, guid: 06c23eaf4be254b01863935f404cdcf0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.027
-    second: {fileID: 2100000, guid: 862dba132a4f54da3abbdea70bbd9452, type: 2}
+      name: Lobby02
+    second: {fileID: 2100000, guid: 3220915ca4712444a820df415b9dfc22, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.028
-    second: {fileID: 2100000, guid: 9a2e596735bf64d2d95596227dc6c505, type: 2}
+      name: Lobby03
+    second: {fileID: 2100000, guid: 48eb99af1746c41689719892681fa498, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.029
-    second: {fileID: 2100000, guid: 3f13c92699989431dac0d7bec3258496, type: 2}
+      name: Lobby04
+    second: {fileID: 2100000, guid: 38fd26100c3d54ea49371ece72de142c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.030
-    second: {fileID: 2100000, guid: b9d7ec226ea624bb6894dbda37f1ec0d, type: 2}
+      name: Lobby05
+    second: {fileID: 2100000, guid: 51aaa860b41764d0d93066cb83061a85, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.031
-    second: {fileID: 2100000, guid: 9082c7b53ab5244d4be8064c203f3fe1, type: 2}
+      name: Lobby06
+    second: {fileID: 2100000, guid: f1e2b8a79e9694b969b44927ab79e14a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.032
-    second: {fileID: 2100000, guid: c20822d241a004034a7b443b5d129139, type: 2}
+      name: Lobby07
+    second: {fileID: 2100000, guid: f995cce81c743441ab67979f7c632c99, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.033
-    second: {fileID: 2100000, guid: 2908a04d98d014ac3b17ee502eb0bf20, type: 2}
+      name: Lobby08
+    second: {fileID: 2100000, guid: 7d11f6ae660ae42dcb4910e4046f7961, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.034
-    second: {fileID: 2100000, guid: af03e22ad777f4c31930b1f2c165e02c, type: 2}
+      name: Lobby09
+    second: {fileID: 2100000, guid: 7810fc7b82a6f4e06bf51f0a854a09f0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.035
-    second: {fileID: 2100000, guid: 1215fe23bad34466c96e0b849ec7593d, type: 2}
+      name: Lobby10
+    second: {fileID: 2100000, guid: fef022f018159475789d61d4a7045874, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.036
-    second: {fileID: 2100000, guid: c432bbe470a974116a6db332a5fe580e, type: 2}
+      name: Lobby11
+    second: {fileID: 2100000, guid: ae9552b3ec87d4b1494cfa37205f1576, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.037
-    second: {fileID: 2100000, guid: 75b6ce73056a543058ee52a115d33448, type: 2}
+      name: Lobby12
+    second: {fileID: 2100000, guid: 0b333d39ae136453b933453798c2777a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.038
-    second: {fileID: 2100000, guid: 49e417d4c6cc1403fab28deb276e4d73, type: 2}
+      name: Office01
+    second: {fileID: 2100000, guid: ca30bed11fb334842aa27d34ef7f5836, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.039
-    second: {fileID: 2100000, guid: ec63e90d2d5b24595875f4335187e8e8, type: 2}
+      name: Office02
+    second: {fileID: 2100000, guid: ebcff554accbb48f5ba175a83075a07a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.040
-    second: {fileID: 2100000, guid: 8a78b7114ff44404881764a5da782668, type: 2}
+      name: Office03
+    second: {fileID: 2100000, guid: 83da22fdade4f490eb184817063df482, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.041
-    second: {fileID: 2100000, guid: 4fcc8a6b0950a45e5bacf1fa722c4fe3, type: 2}
+      name: Office04
+    second: {fileID: 2100000, guid: b33047fc6d89c49c98e2417ad22b16c2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.042
-    second: {fileID: 2100000, guid: 170e20e92deb64ffeba355e012ba7bf2, type: 2}
+      name: Office05
+    second: {fileID: 2100000, guid: 77ce57a3b07d946b5b13b087599a7e75, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.043
-    second: {fileID: 2100000, guid: d7f6b4f3b7a6a4026be02088c897a84c, type: 2}
+      name: Office06
+    second: {fileID: 2100000, guid: 48bf738e944e3449d82705bfb49c9a0a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.044
-    second: {fileID: 2100000, guid: dbfa6f36fa179465eb85ccac39990e09, type: 2}
+      name: Office07
+    second: {fileID: 2100000, guid: a075f1035596649a1ba3c7530c3051df, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.045
-    second: {fileID: 2100000, guid: b692131b668024753ba7eaf9faa64820, type: 2}
+      name: Office09
+    second: {fileID: 2100000, guid: b48ac07eb314245d7b6f3d8fc990aeed, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.046
-    second: {fileID: 2100000, guid: d18024d85ebd5415c9fc2982a17b7ace, type: 2}
+      name: Office10
+    second: {fileID: 2100000, guid: 2915ee87d6ee14653ad0d66082d37cdc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.047
-    second: {fileID: 2100000, guid: 2a9a1820d88a14a9496ae59082b8a24e, type: 2}
+      name: Office11
+    second: {fileID: 2100000, guid: b8ca06251b2054655bbd39ddd83739c6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.048
-    second: {fileID: 2100000, guid: 43163652c164848d48de8347d2c96f95, type: 2}
+      name: Office12
+    second: {fileID: 2100000, guid: 3de6f599cd82b42f297ce52657201871, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.049
-    second: {fileID: 2100000, guid: cc64d6f7d48904d8591995825364a7c4, type: 2}
+      name: Office13
+    second: {fileID: 2100000, guid: 4e33bbd4239e8420aa64a931d9d558fa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.050
-    second: {fileID: 2100000, guid: 52bd8e0deb22848d5b9ed1d365ec7ab9, type: 2}
+      name: Office14
+    second: {fileID: 2100000, guid: 9b1390a0aae63441db47adfb86c5a8d1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.051
-    second: {fileID: 2100000, guid: 739ac11c65f0946d9b123ce071cf69dd, type: 2}
+      name: Office15
+    second: {fileID: 2100000, guid: e26c2f9c7941440518a1baea0a0fd5a1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.053
-    second: {fileID: 2100000, guid: 23a3656f3050a4284988372521a4179d, type: 2}
+      name: Office16
+    second: {fileID: 2100000, guid: eb2496d86fdbb4c6898ba8bd90ae1737, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.054
-    second: {fileID: 2100000, guid: be46cffc050114f52bc023c0042bf45a, type: 2}
+      name: Office17
+    second: {fileID: 2100000, guid: d794cdb37b48b49ff9cd3a8c395e7213, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.055
-    second: {fileID: 2100000, guid: dbf4778f7568f419989ee8d2a08b3512, type: 2}
+      name: Office18
+    second: {fileID: 2100000, guid: b75610cc1dbfe4b4392431de19bed3cc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.056
-    second: {fileID: 2100000, guid: a8bf76d4cbf5a40ce947f1287ca8c58d, type: 2}
+      name: Office19
+    second: {fileID: 2100000, guid: 4a614dcd36d3f4c85b40a664b76a4535, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.057
-    second: {fileID: 2100000, guid: 01f837f12e3614e3db8c194e9b2d2b32, type: 2}
+      name: Office20
+    second: {fileID: 2100000, guid: aa5120df8cce647b78f4c2a1b1c9adc6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.058
-    second: {fileID: 2100000, guid: 352dfc410ecd54edc95919aa3a956c58, type: 2}
+      name: Office21
+    second: {fileID: 2100000, guid: 6f1e1f8df8f0f4ef48e7b2b82ebf7bb7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.059
-    second: {fileID: 2100000, guid: 698bc7be936614de7a50f7bb804d0018, type: 2}
+      name: Office22
+    second: {fileID: 2100000, guid: 86434768bf0a9463d8be07648ab64245, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.060
-    second: {fileID: 2100000, guid: 940c56fbf43714a49b8edda63f0e3a82, type: 2}
+      name: Office23
+    second: {fileID: 2100000, guid: d34c3465e307243c8931fca6dc8d589f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.061
-    second: {fileID: 2100000, guid: fd33d7556fc6e417a89b133a81576c1a, type: 2}
+      name: Office24
+    second: {fileID: 2100000, guid: 76d27425a577f42328ed163c4921ef6e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.062
-    second: {fileID: 2100000, guid: dbb4cd7f45ef34f8db63f964a3d5ac40, type: 2}
+      name: Office25
+    second: {fileID: 2100000, guid: 0c65db493154242ee8f5344b7d78bf2b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.063
-    second: {fileID: 2100000, guid: ace5a3bc0fc424c7e92aebeedd8d2688, type: 2}
+      name: Office26
+    second: {fileID: 2100000, guid: 6a48c0777fbb94d428aaaaa04badaff0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.064
-    second: {fileID: 2100000, guid: 1fa82a2a049a44d70ad97954543b0ec0, type: 2}
+      name: Office27
+    second: {fileID: 2100000, guid: a7efec0e0a7bf494a876dcb767e86b46, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.065
-    second: {fileID: 2100000, guid: f298225be2ef3491783311ed67a13a3c, type: 2}
+      name: Office28
+    second: {fileID: 2100000, guid: cf26c1955503c40fe8235716fc433ff6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.066
-    second: {fileID: 2100000, guid: fc6acc2385f6a497e9e7f79e068ef609, type: 2}
+      name: Office29
+    second: {fileID: 2100000, guid: 4726651a32e994e4e9376e3e6e8e04ce, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.067
-    second: {fileID: 2100000, guid: b1ae388c1a2314eef891bc42f115bbc4, type: 2}
+      name: Office30
+    second: {fileID: 2100000, guid: 47f4dbb94cdbe486aa7e5a0da5c5104e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.068
-    second: {fileID: 2100000, guid: 6ae70f2e290ef450992cb23b986c7998, type: 2}
+      name: Office31
+    second: {fileID: 2100000, guid: 1bd9e986f8d9a4e1ebe64297ee6f2924, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.069
-    second: {fileID: 2100000, guid: b53c59a0faae6432c9c0ac03f04b3a9e, type: 2}
+      name: Office32
+    second: {fileID: 2100000, guid: 3168353792e2d4afcbb6e6ea905df045, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.070
-    second: {fileID: 2100000, guid: 481f9effb78064cc19909f0d12702e43, type: 2}
+      name: Storage01
+    second: {fileID: 2100000, guid: 6424ce96f39af4ac0914d57376733c17, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.071
-    second: {fileID: 2100000, guid: b754fea10f25b4a99862f3dfae550e3a, type: 2}
+      name: Storage02
+    second: {fileID: 2100000, guid: 37d37a8751bd94eaeac86a3d45e3e335, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.072
-    second: {fileID: 2100000, guid: 74faa06fbf47947d2a1308089e1ecb43, type: 2}
+      name: Storage04
+    second: {fileID: 2100000, guid: 8ce824367ecb44d37babd6abd565f1be, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.073
-    second: {fileID: 2100000, guid: 87985766d38e145be912308a0a604691, type: 2}
+      name: Storage05
+    second: {fileID: 2100000, guid: d1fa3791f50ef4911890d95593e7360d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.074
-    second: {fileID: 2100000, guid: 0cd4b6b8b82f74a55a32a23ca882d9cc, type: 2}
+      name: Storage06
+    second: {fileID: 2100000, guid: 30b14bb65e91a488db67e6737f819c3e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.075
-    second: {fileID: 2100000, guid: 4bedb52a6460f45e68f752a9f048058d, type: 2}
+      name: Storage07
+    second: {fileID: 2100000, guid: 7e59594ecd3f64a6aa03c03e99d32557, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.076
-    second: {fileID: 2100000, guid: 11d68293e89c84e628b229cbde6e48a7, type: 2}
+      name: Storage08
+    second: {fileID: 2100000, guid: 76ec23530f3a84917a87c8c984204a47, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.077
-    second: {fileID: 2100000, guid: 52e826d94aba442719ec4b46580aaa91, type: 2}
+      name: Storage09
+    second: {fileID: 2100000, guid: f9e66288855ed44cba465e738625e8f4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.078
-    second: {fileID: 2100000, guid: d5766a41ebdea41f7adadd3293492a34, type: 2}
+      name: Storage10
+    second: {fileID: 2100000, guid: 60570240cb9494b4585ce72ae84db971, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material_2
-    second: {fileID: 2100000, guid: 4c3c1260ff8734580a43ff0843d323e2, type: 2}
+      name: Storage11
+    second: {fileID: 2100000, guid: 5f0370e7ed5b44788a3f2f0dcf49e741, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Storage12
+    second: {fileID: 2100000, guid: 2d3cc39cac44f43ad8fbf7750b3595fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Storage13
+    second: {fileID: 2100000, guid: 24ff3231eb01e4f6b80033f6a514c0a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Workshop
+    second: {fileID: 2100000, guid: 3a6b2daf496b74b9fae2a595ea472e32, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -476,7 +491,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1

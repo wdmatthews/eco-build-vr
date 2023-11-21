@@ -108,12 +108,7 @@ public class DataGraph : MonoBehaviour
         // if (isMonthly)
         // if (isAnnual)
         
-        if (isHourly)
-        {
-            _hour = 0;
-            _hourSlider.value = 0;
-            UpdateFloor();
-        }
+        if (isHourly) UpdateFloor();
     }
 
     public void UpdateFloor()
