@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RectTransform: {fileID: 1058551621166024840}
+  Image: {fileID: 1610155518549931554}
   Label: {fileID: 1149237460557000628}
 --- !u!222 &6887041999497270106
 CanvasRenderer:

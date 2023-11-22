@@ -222,6 +222,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Office08
+    second: {fileID: 2100000, guid: b6d2771d4ab63412f9f682cc8f31b171, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Office09
     second: {fileID: 2100000, guid: b48ac07eb314245d7b6f3d8fc990aeed, type: 2}
   - first:
@@ -349,6 +354,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Storage02
     second: {fileID: 2100000, guid: 37d37a8751bd94eaeac86a3d45e3e335, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Storage03
+    second: {fileID: 2100000, guid: 45e47c75d27b44116af247462e797e5e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

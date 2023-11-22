@@ -37,6 +37,8 @@ public class DataGraph : MonoBehaviour
         { "December", 8015 },
     };
 
+    private static readonly string[] _months = { "J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D" };
+
     [SerializeField] private Canvas _canvas = null;
     [SerializeField] private RectTransform _barParent = null;
     [SerializeField] private TextMeshProUGUI _roomLabel = null;
@@ -45,11 +47,16 @@ public class DataGraph : MonoBehaviour
     [SerializeField] private TMP_Dropdown _monthField = null;
     [SerializeField] private TMP_Dropdown _dayField = null;
     [SerializeField] private Slider _hourSlider = null;
+    [SerializeField] private TextMeshProUGUI _hourStartLabel = null;
+    [SerializeField] private TextMeshProUGUI _hourEndLabel = null;
     [SerializeField] private GraphBar _barPrefab = null;
-    [SerializeField] private Gradient _floorGradient = new Gradient();
+    [SerializeField] private Gradient _floorGradient = new();
+    [SerializeField] private TextMeshProUGUI _annualLabel = null;
 
     public Camera Camera { set => _canvas.worldCamera = value; }
     public Dictionary<string, float[]> HourlyDataByVariable { get; set; }
+    public Dictionary<string, float[]> MonthlyDataByVariable { get; set; }
+    public Dictionary<string, float> AnnualDataByVariable { get; set; }
 
     private GraphBar[] _bars = { };
     private float[] _data = { };
@@ -61,12 +68,19 @@ public class DataGraph : MonoBehaviour
     private int _day = 1;
     private int _hour = 0;
     private Material _floorMaterial = null;
+    private Color _floorOriginalColor = new();
 
     public void Initialize(string roomName, Material floorMaterial)
     {
         name = $"{roomName}_Graph";
         _roomLabel.text = roomName;
         _floorMaterial = floorMaterial;
+        _floorOriginalColor = floorMaterial.color;
+    }
+
+    private void OnApplicationQuit()
+    {
+        _floorMaterial.color = _floorOriginalColor;
     }
 
     public void UpdateBars()
@@ -80,9 +94,9 @@ public class DataGraph : MonoBehaviour
             var options = _dayField.options;
             options.Clear();
 
-            for (int m = 0; m < _daysPerMonth[_month]; m++)
+            for (int d = 0; d < _daysPerMonth[_month]; d++)
             {
-                options.Add(new($"{m + 1}"));
+                options.Add(new($"{d + 1}"));
             }
 
             _dayField.value = Mathf.Clamp(_dayField.value, 0, _daysPerMonth[_month] - 1);
@@ -96,31 +110,37 @@ public class DataGraph : MonoBehaviour
         _monthField.gameObject.SetActive(isHourly);
         _dayField.gameObject.SetActive(isHourly);
         _hourSlider.gameObject.SetActive(isHourly && _variable == "Air Temperature (C)");
+        _hourStartLabel.gameObject.SetActive(isHourly && _variable == "Air Temperature (C)");
+        _hourEndLabel.gameObject.SetActive(isHourly && _variable == "Air Temperature (C)");
+        _annualLabel.gameObject.SetActive(isAnnual);
 
         for (int i = 0; i < _bars.Length; i++)
         {
             GraphBar bar = _bars[i];
             _oldBars.Push(bar);
-            bar.gameObject.SetActive(false);
+            bar.Image.enabled = false;
+            bar.Label.enabled = false;
         }
 
         if (isHourly) CreateBars(GetHourlyData(_month, _day, HourlyDataByVariable[_variable]));
-        // if (isMonthly)
-        // if (isAnnual)
-        
-        if (isHourly) UpdateFloor();
+        if (isMonthly) CreateBars(MonthlyDataByVariable[_variable]);
+        if (isAnnual) _annualLabel.text = $"{AnnualDataByVariable[_variable]}";
+
+        if (isHourly && _variable == "Air Temperature (C)") UpdateFloor();
     }
 
     public void UpdateFloor()
     {
         _hour = (int)_hourSlider.value;
-        float percent = _data[Mathf.Min(_hour, _data.Length - 1)] / _maxValue;
+        float temperature = _data[Mathf.Min(_hour, _data.Length - 1)];
+        float percent = temperature > 0 ? temperature / _maxValue : 0;
         _floorMaterial.color = _floorGradient.Evaluate(percent);
     }
 
     private void CreateBars(float[] data = null)
     {
         if (_period == "Hourly") _data = data ?? GetHourlyData(_month, _day, HourlyDataByVariable[_variable]);
+        if (_period == "Monthly") _data = data ?? MonthlyDataByVariable[_variable];
         int barCount = _data.Length;
         _bars = new GraphBar[barCount];
         float barWidth = (_barParent.rect.width - barCount - 1) / barCount;
@@ -134,7 +154,8 @@ public class DataGraph : MonoBehaviour
             barTransform.anchoredPosition = new Vector2(i * (barWidth + 1), 0);
             barTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, barWidth);
             barTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, barHeight);
-            bar.gameObject.SetActive(true);
+            bar.Image.enabled = true;
+            bar.Label.enabled = true;
             _bars[i] = bar;
 
             float value = _data[i];
@@ -155,9 +176,9 @@ public class DataGraph : MonoBehaviour
         else startIndex += (day - 1) * 24;
 
         int endIndex = month == "January" && day == 1 ? startIndex + 23 : startIndex + 24;
-        float[] hourlyData = new float[endIndex - startIndex + 1];
+        float[] hourlyData = new float[endIndex - startIndex];
 
-        for (int i = startIndex; i <= endIndex; i++)
+        for (int i = startIndex; i < endIndex; i++)
         {
             hourlyData[i - startIndex] = data[i];
         }
@@ -170,7 +191,7 @@ public class DataGraph : MonoBehaviour
         GraphBar bar = _bars[index];
         float maxHeight = _barParent.rect.height;
         bar.RectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,
-            maxHeight * value / _maxValue);
-        if (_period == "Hourly") bar.Label.text = $"{index + 1}";
+            _maxValue == 0 ? 0 : maxHeight * value / _maxValue);
+        bar.Label.text = _period == "Hourly" ? $"{((_month == "January" && _day == 1) ? index + 1 : index)}" : $"{_months[index]}";
     }
 }
