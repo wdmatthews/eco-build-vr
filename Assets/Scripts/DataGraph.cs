@@ -52,6 +52,7 @@ public class DataGraph : MonoBehaviour
     [SerializeField] private GraphBar _barPrefab = null;
     [SerializeField] private Gradient _floorGradient = new();
     [SerializeField] private TextMeshProUGUI _annualLabel = null;
+    [SerializeField] private TextMeshProUGUI[] _tickLabels = { };
 
     public Camera Camera { set => _canvas.worldCamera = value; }
     public Dictionary<string, float[]> HourlyDataByVariable { get; set; }
@@ -60,6 +61,7 @@ public class DataGraph : MonoBehaviour
 
     private GraphBar[] _bars = { };
     private float[] _data = { };
+    private float _minValue = Mathf.Infinity;
     private float _maxValue = Mathf.NegativeInfinity;
     private Stack<GraphBar> _oldBars = new();
     private string _period = "Hourly";
@@ -114,6 +116,11 @@ public class DataGraph : MonoBehaviour
         _hourEndLabel.gameObject.SetActive(isHourly && _variable == "Air Temperature (C)");
         _annualLabel.gameObject.SetActive(isAnnual);
 
+        for (int i = 0; i < _tickLabels.Length; i++)
+        {
+            _tickLabels[i].gameObject.SetActive(!isAnnual);
+        }
+
         for (int i = 0; i < _bars.Length; i++)
         {
             GraphBar bar = _bars[i];
@@ -124,7 +131,13 @@ public class DataGraph : MonoBehaviour
 
         if (isHourly) CreateBars(GetHourlyData(_month, _day, HourlyDataByVariable[_variable]));
         if (isMonthly) CreateBars(MonthlyDataByVariable[_variable]);
-        if (isAnnual) _annualLabel.text = $"{AnnualDataByVariable[_variable]}";
+        if (isAnnual)
+        {
+            float value = AnnualDataByVariable[_variable];
+            _annualLabel.text = value < 100
+                ? string.Format("{0,10:N2}", value)
+                : string.Format("{0,10:E2}", value);
+        }
 
         if (isHourly && _variable == "Air Temperature (C)") UpdateFloor();
     }
@@ -133,7 +146,8 @@ public class DataGraph : MonoBehaviour
     {
         _hour = (int)_hourSlider.value;
         float temperature = _data[Mathf.Min(_hour, _data.Length - 1)];
-        float percent = temperature > 0 ? temperature / _maxValue : 0;
+        float percent = temperature > 0 && !Mathf.Approximately(_maxValue, _minValue)
+            ? (temperature - _minValue) / (_maxValue - _minValue) : 0;
         _floorMaterial.color = _floorGradient.Evaluate(percent);
     }
 
@@ -145,6 +159,7 @@ public class DataGraph : MonoBehaviour
         _bars = new GraphBar[barCount];
         float barWidth = (_barParent.rect.width - barCount - 1) / barCount;
         float barHeight = _barParent.rect.height;
+        _minValue = Mathf.Infinity;
         _maxValue = Mathf.NegativeInfinity;
 
         for (int i = 0; i < barCount; i++)
@@ -160,11 +175,25 @@ public class DataGraph : MonoBehaviour
 
             float value = _data[i];
             if (value > _maxValue) _maxValue = value;
+            if (value < _minValue) _minValue = value;
         }
 
         for (int i = 0; i < barCount; i++)
         {
             UpdateBar(i, _data[i]);
+        }
+
+        int tickCount = _tickLabels.Length;
+
+        for (int i = 0; i < tickCount; i++)
+        {
+            TextMeshProUGUI tickLabel = _tickLabels[i];
+            float percent = 1f * i / (tickCount - 1);
+            float value = percent * _maxValue;
+            tickLabel.text = _maxValue < 100
+                ? string.Format("{0,10:N2}", value)
+                : string.Format("{0,10:E2}", value);
+            if (i > 0 && Mathf.Approximately(percent, 0)) tickLabel.gameObject.SetActive(false);
         }
     }
 

@@ -1029,8 +1029,8 @@ MonoBehaviour:
   - Lobby 11
   - Lobby 12
   - Lobby 1
-  - Lobby 2
-  - Lobby 3
+  - West Lobby Entrance
+  - West Lobby Stairs
   - Lobby 4
   - Lobby 5
   - Lobby 6
@@ -1042,7 +1042,7 @@ MonoBehaviour:
   - Office 12
   - Office 13
   - Office 14
-  - Office 15
+  - AH 230
   - Office 16
   - Office 17
   - Office 18
@@ -2895,7 +2895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_System: {fileID: 1357358710}
   m_MoveSpeed: 3
-  m_EnableStrafe: 0
+  m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
   m_GravityApplicationMode: 1
